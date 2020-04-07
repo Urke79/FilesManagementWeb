@@ -1,0 +1,15 @@
+
+*.suo
+
+bin/
+
+obj/
+
+/packages/
+.vs/
+
+/Release/
+
+*.mdf
+*.ldf
+*.user

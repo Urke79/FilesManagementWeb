@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "zezanje\Web.csproj", "{2888E40C-95BA-4E8F-A5AE-E0DD85659B93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{BBF79FEB-4601-4231-90A1-C24A222A99D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{34DE8F60-E5F0-47DB-BF0A-135D7B5CB6C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2888E40C-95BA-4E8F-A5AE-E0DD85659B93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2888E40C-95BA-4E8F-A5AE-E0DD85659B93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2888E40C-95BA-4E8F-A5AE-E0DD85659B93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2888E40C-95BA-4E8F-A5AE-E0DD85659B93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBF79FEB-4601-4231-90A1-C24A222A99D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF79FEB-4601-4231-90A1-C24A222A99D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF79FEB-4601-4231-90A1-C24A222A99D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF79FEB-4601-4231-90A1-C24A222A99D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34DE8F60-E5F0-47DB-BF0A-135D7B5CB6C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34DE8F60-E5F0-47DB-BF0A-135D7B5CB6C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34DE8F60-E5F0-47DB-BF0A-135D7B5CB6C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34DE8F60-E5F0-47DB-BF0A-135D7B5CB6C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
