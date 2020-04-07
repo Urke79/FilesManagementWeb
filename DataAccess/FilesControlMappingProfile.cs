@@ -15,7 +15,8 @@ namespace DataAccess
         {
             CreateMap<FileMetadataEntity, FileMetadata>()
                 .ForMember(dest => dest.Expires, opt => opt.ResolveUsing(src => (src.Expires - DateTime.Now).Days))
-                .ForMember(dest => dest.DT_RowId, opt => opt.MapFrom(src => src.Id));
+                .ForMember(dest => dest.DT_RowId, opt => opt.MapFrom(src => src.Id))
+                .ForMember(dest => dest.DateUploaded, opt => opt.MapFrom(src => src.DateUploaded.ToShortDateString()));
         }
     }
 }

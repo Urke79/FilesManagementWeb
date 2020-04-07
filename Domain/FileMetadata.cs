@@ -13,7 +13,7 @@ namespace Domain
         public int DT_RowId { get; set; }
         public string FileName { get; set; }
         public string Size { get; set; }
-        public DateTime DateUploaded { get; set; }
+        public string DateUploaded { get; set; }
         public int Expires { get; set; }
         public string Url { get; set; }
     }
