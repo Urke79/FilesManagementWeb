@@ -1,15 +1,14 @@
-﻿define(["copyToClipboard", "fileTableService", "datatablesBootstrap"],
-    function (clipboard, fileTableService) {
+﻿define(["copyToClipboard", "fileTableService", "constants", "datatablesBootstrap"],
+    function (clipboard, fileTableService, constants) {
 
         var table;
-        var baseUrl = window.location.origin;
 
         var _init = function () {
 
             table = $('#filesTable').DataTable({
                 "processing": true,
                 "ajax": {
-                    "url": baseUrl + "/api/filemetadata/showfiles",
+                    "url": constants.baseUrl + "/api/filemetadata/showfiles",
                     "type": "POST",
                     "dataSrc": ""
                 },
@@ -75,7 +74,7 @@
 
                 switch (true) {
                     case $(this).hasClass('js-clipboard'):
-                        var text = baseUrl + '/api/FileMetadata/DownloadFile/' + id;
+                        var text = constants.baseUrl + '/api/FileMetadata/DownloadFile/' + id;
                         clipboard.copyTextToClipboard(text);
                         alert("File link was added to the clipboard. File Link:" + "\n" + text);
                         break;

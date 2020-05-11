@@ -11,7 +11,8 @@
         signalR: "lib/jquery.signalR-2.4.1.min",
         signalRHubs: "../signalr/hubs?noext",
         copyToClipboard: "app/clipboard",
-        fileTableService: "app/fileTableService"
+        fileTableService: "app/fileTableService",
+        constants: "app/constants"
 
     },
 

@@ -1,15 +1,13 @@
 ﻿
-define(["require"], function (require) {
-
-    var baseUrl = window.location.origin;
+define(["require", "constants"], function (require, constants) {
 
     function deleteFile(id) {
         $.ajax({
-            url: baseUrl + '/api/filemetadata/' + id,
+            url: constants.baseUrl + '/api/filemetadata/' + id,
             type: 'DELETE',
             success: function (result) {
                 if (result === true) {
-                    require("dataTableCustom").reloadTable(); // circular dependency -  rethink!!!!!
+                    require("dataTableCustom").reloadTable();
                 }
                 else {
                     // TO DO
@@ -21,11 +19,11 @@ define(["require"], function (require) {
 
     function refrheshExpiryDate(id) {
         $.ajax({
-            url: baseUrl + '/api/filemetadata/' + id,
+            url: constants.baseUrl + '/api/filemetadata/' + id,
             type: 'PUT',
             success: function (result) {
                 if (result === true) {
-                    require("dataTableCustom").reloadTable();  // circular dependency -  rethink!!!!!
+                    require("dataTableCustom").reloadTable();
                 }
                 else {
                     // TO DO
@@ -36,12 +34,12 @@ define(["require"], function (require) {
 
     function renameFile(data) {
         $.ajax({
-            url: baseUrl + '/api/filemetadata',
+            url: constants.baseUrl + '/api/filemetadata',
             data: data,
             type: 'PUT',
             success: function (result) {
                 if (result === true) {
-                    require("dataTableCustom").reloadTable();  // circular dependency -  rethink!!!!!
+                    require("dataTableCustom").reloadTable();
                 }
                 else {
                     // TO DO
