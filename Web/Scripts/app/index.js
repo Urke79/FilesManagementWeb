@@ -1,9 +1,6 @@
-﻿
-define(["dropZone", "dataTableCustom"], function (dropzone, table) {
-
+﻿define(["dropZone", "dataTableCustom"], function (dropzone, table) {
     // initialize drop zone 
-    window.Dropzone = dropzone;
-    window.Dropzone.autoDiscover = false;
+    dropzone.autoDiscover = false;
 
     $('.dropzone').dropzone({
         init: function () {
