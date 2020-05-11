@@ -1,4 +1,6 @@
-﻿@{
+﻿@using Web.Extensions;
+
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -41,10 +43,8 @@
 
 @section Scripts
 {
-    <link href="~/Scripts/DropZone/dropzone.css" rel="stylesheet" />
-    @Scripts.Render("~/bundles/dropzone")    
+    <link href="~/Scripts/lib/DropZone/dropzone.css" rel="stylesheet" />    
     @Styles.Render("~/bundles/dataTables/css")
-    @Scripts.Render("~/bundles/dataTables")
-    <script src="signalr/hubs" type="text/javascript"></script>
-    <script type="text/javascript" src="~/Scripts/CustomCode/custom-code.js"></script>
+   
+    @Html.RequireJs("index")
 }
